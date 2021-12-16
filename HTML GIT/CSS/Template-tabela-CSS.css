@@ -1,5 +1,5 @@
 .{
-    width: 100%;
+    width: 100vw;
 }
 
 @media (max-width: 768px) {
@@ -8,16 +8,7 @@
       }
 
     nav {
-        width: 30vw;
         overflow-wrap: break-word;
-    }
-
-    article {
-        width: 70vw;
-    }
-
-    header {
-        padding: 10px;
     }
 
     header h2 {
@@ -38,7 +29,6 @@
 
     nav h3 {
         font-size: 18px;
-        padding-left: 10px;
     }
 
     a {
@@ -50,22 +40,21 @@
         font-size: 15px;
     }
 
+    Table thead th {
+    font-size: 18px;
+    }
+
 }
 
 @media (max-width: 425px) {
 
     .left, .main, .right {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-      }
+        width: 100%; 
+    }
 
-      nav {
-          width: 30vw;
+    nav {
           overflow-wrap: break-word;
-      }
-
-      article {
-        width: 70vw;
-    } 
+    }
 
     header h2 {
         font-weight: 400;
@@ -95,6 +84,10 @@
     p {
         font-size: 13px;
     }
+
+    Table thead th {
+        font-size: 15px;
+    }
 }
 
 html {
@@ -105,18 +98,18 @@ html {
 
 header {
     display: block;
+    width: 100%;
     background-color: #AF094D;
     padding: 10px;
     color: white;
     text-align: center;
-    border-bottom: solid 20px white;
 }
 
 nav {
     display: block;
     float: left;
     width: 20%;
-    padding: 2px;
+    padding: 5px;
     border: solid 3px #FF006A;
     margin: 10px;
     background-color: #FFE2EE;
@@ -150,9 +143,9 @@ header p {
     color: white;
 }
 
-
 .navegacao {
    font-size: 18px;
+   padding: 5px;
 }
 
 a {
@@ -189,19 +182,23 @@ p {
 
 }
 
+article [
+    width: 70%;
+]
+
 Table {
 	border: 15px solid #E4C5FF;
+    align: center;
 	padding: 4px;
 	margin: 10px;
+    border: solid 2px #AF094D;
 	color: purple;
-	width: 70%;
-	border-collapse: collapse;
-	align: center;
+	border-collapse: collapse;	
 }
 
-Table thead th{
+Table thead th {
 	border: 2px solid #E4C5FF;
-	font-family: sans-serif;
+	font-family: sans-serif ;
 	font-weight: bolder;
 	font-size: 20px;
 	font-family: Calibri;
@@ -238,7 +235,8 @@ tr:nth-child(even) {
 footer {
     display: inline-block;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
+    margin: 2px;
     text-align: center;
     background-color: #AF094D;
 }

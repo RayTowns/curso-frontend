@@ -1,5 +1,5 @@
 .{
-    width: 100%;
+    width: 100vw;
 }
 
 @media (max-width: 768px) {
@@ -9,14 +9,6 @@
 
     nav {
         overflow-wrap: break-word;
-    }
-
-    article {
-        width: 70vw;
-    }
-
-    header {
-        padding: 10px;
     }
 
     header h2 {
@@ -37,7 +29,6 @@
 
     nav h3 {
         font-size: 18px;
-        padding-left: 10px;
     }
 
     a {
@@ -46,15 +37,11 @@
 
 
     p {
-        font-size: 10px;
-    }
-
-    Article {
         font-size: 15px;
     }
 
-    Article label {
-        font-size: 15px;
+    Table thead th {
+    font-size: 18px;
     }
 
 }
@@ -62,10 +49,11 @@
 @media (max-width: 425px) {
 
     .left, .main, .right {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-      }
+        width: 100%; 
+    }
 
     nav {
+        
           overflow-wrap: break-word;
     }
 
@@ -91,20 +79,15 @@
 
     a {
         font-size: 9px;
-    }
+     }
 
 
     p {
         font-size: 13px;
     }
 
-    
-    article {
-        font-size: 13px;
-    }
-
-    article label {
-        font-size: 13px;
+    Table thead th {
+        font-size: 15px;
     }
 }
 
@@ -121,7 +104,6 @@ header {
     padding: 10px;
     color: white;
     text-align: center;
-    border-bottom: solid 20px white;
 }
 
 nav {
@@ -134,18 +116,6 @@ nav {
     background-color: #FFE2EE;
    
 }
-
-article {
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 65%;
-    border: solid 2px #FF006A;
-    font-family: Frutiger;
-    text-align: center;
-    background-color: white;
-}
-
 
 li {
     list-style-type: none
@@ -174,7 +144,6 @@ header p {
     color: white;
 }
 
-
 .navegacao {
    font-size: 18px;
    padding: 5px;
@@ -198,10 +167,6 @@ a:hover {
     color: #ff006a;
 }
 
-article h3 {
-    text-align: center;
-}
-
 h3 {
     font-size: 22px;
     color: orangered;
@@ -218,10 +183,61 @@ p {
 
 }
 
+article [
+    width: 70%;
+]
+
+Table {
+	border: 15px solid #E4C5FF;
+    align: center;
+	padding: 4px;
+	margin: 10px;
+    border: solid 2px #AF094D;
+	color: purple;
+	border-collapse: collapse;	
+}
+
+Table thead th {
+	border: 2px solid #E4C5FF;
+	font-family: sans-serif ;
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: Calibri;
+	text-align: Left;
+	background-color: #F3E5F5;
+}
+
+Table tbody td {
+	border: 1px solid #E4C5FF;
+	font-family: serif;
+	font-family: Times New Roman;
+	font-size: 18px;
+	text-align: left;
+}
+
+table tbody tr:hover {
+	color: blueviolet;
+	background-color: lightgrey;
+}
+
+Table tfoot td {
+	font-weight: bolder;
+	font-size: 20px;
+	border: 1px solid #E4C5FF;
+	text-align: left;
+    background-color: #CE93D8;
+}
+
+tr:nth-child(even) {
+  background-color: #f2e4f5;
+}
+
+
 footer {
     display: inline-block;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
+    margin: 2px;
     text-align: center;
     background-color: #AF094D;
 }
@@ -230,25 +246,4 @@ footer p {
     font-family: Roboto;
     color: white;
     font-size: 18px;
-}
-
-article h2 {
-    font-family: Roboto;
-    color: #A1104C;
-    text-align: center;
-    font-size: 31px;
-}
-article div {
-    border-bottom: solid 1px #FF006A;
-    background-color: #FFE2EE;
-    padding: 5px;
-    display: block;
-}
-
-article label {
-    font-family: Roboto;
-    font-weight: 200;
-    color: orangered;
-    font-size: 20px;
-    text-align: center;
 }
