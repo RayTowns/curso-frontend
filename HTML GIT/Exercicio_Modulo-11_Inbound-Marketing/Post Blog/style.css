@@ -1,0 +1,39 @@
+html {
+    padding-left: 20px;
+    Margin: 5px;
+}
+
+Header {
+    background-color: white;
+}
+
+Header img {
+    size-adjust: 25%;
+}
+
+nav {
+    text-decoration: none;
+    width: 25%;
+    font-size: 14px;
+    background-color: blue;
+    color: white;
+}
+
+article {
+    width: 55%;
+    font-size: 13px;
+}
+
+article h1 {
+    color: blue;
+}
+
+article h2 {
+    color: cadetblue;
+}
+
+
+
+footer {
+
+}
