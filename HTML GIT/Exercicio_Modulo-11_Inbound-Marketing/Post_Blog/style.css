@@ -17,7 +17,8 @@ body {
     display: block;
     float: left;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
+    weight: auto;
     margin: 0 auto;
 }
 
@@ -80,7 +81,7 @@ section article {
 }
 
 .article_img {
-    max-width: 800px;
+    max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -121,6 +122,12 @@ article p {
     color:#302f2e;
 }
 
+.cog-cognito {
+   height: 620px !important;
+   overflow: hidden !important;
+   padding: 20px !important;
+   border: solid 1px coral !important;
+}
 
 footer {
 background-color: blue;
