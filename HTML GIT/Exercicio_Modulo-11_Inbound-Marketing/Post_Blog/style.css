@@ -7,8 +7,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 .main-container {
-    max-width: 100vw;
+    width: 100vw;
     display: block;
     margin: 0 auto;
 }
@@ -17,8 +18,8 @@ body {
     display: block;
     float: left;
     padding: 20px;
-    max-width: 100%;
-    weight: auto;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -27,7 +28,7 @@ Header {
     display: block;
     float: left;
     padding: 20px;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 15px;
     border-bottom: solid 1.5px blue;
 }
@@ -39,6 +40,7 @@ header img {
 
 section {
     font-size: 1.5rem;
+    max-width: 100vw;
     float: left;
     background-color: #ffffff;
 }
@@ -131,16 +133,47 @@ article p {
 
 footer {
 background-color: blue;
+text-align: center;
 color: #ffffff;
 font-size: 1.4rem;
 float: left;
 width: 100vw;
 padding: 20px;
-text-align: center;
 }
 
 footer small {
     margin-top: 3px;
     font-size: 80%;
     display: block;
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+
+section article, section nav { 
+    width: 100%;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+.cog-cognito {
+    height: 769px !important;
+    overflow: hidden !important;
+    padding: 20px !important;
+    border: solid 1px coral !important;
+ }
+ 
+}
+
+@media (min-width: 450px; max-width: 770px) {
+
+    .cog-cognito {
+        height: 760px !important;
+        overflow: hidden !important;
+        padding: 20px !important;
+        border: solid 1px coral !important;
+     }  
 }
