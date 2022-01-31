@@ -5,8 +5,6 @@ html {
 body {
     background-color: rgb(240, 245, 247);
     font-family: 'Roboto', sans-serif;
-    max-width: 1300px;
-    width: 100vw;
 }
 
 
@@ -20,9 +18,8 @@ body {
     display: block;
     float: left;
     padding: 20px 0;
-    max-width: 100vw;
-    width: 98%;
     height: auto;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -37,8 +34,8 @@ Header {
     background-color: #ffffff;
     display: block;
     float: left;
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
+    width: 98%;
     margin-bottom: 15px;
     border-bottom: solid 1.5px blue;
 }
@@ -52,9 +49,8 @@ section {
     display: block;
     float: left;
     font-size: 1.5rem;
-    max-width: 100vw;
-    width: 100%;
     background-color: #ffffff;
+    width: 100%;
 
 }
 
@@ -85,11 +81,10 @@ nav a:hover {
     color: blue;
 }
 
-
 section article {
     display: block;
     float: left;
-    width: 70%;
+    width: 76%;
     font-size: 13px;
     margin: 10px 0 0 10px;
 
@@ -142,16 +137,21 @@ article p {
    overflow: hidden !important;
    padding: 20px !important;
    border: solid 1px coral !important;
+   align-content: center !important;
 }
 
 footer {
-width: 100%;
-background-color: blue;
-text-align: center;
-color: #ffffff;
-font-size: 1.4rem;
-float: left;
-padding: 20px 15px;
+    width: 98%;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 1.4rem;
+    float: left;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+footer p {
+    align: center;
 }
 
 footer small {
@@ -170,8 +170,6 @@ footer small {
     width: 100%;
     height: 100vh;
 }
-
-
 
 .legenda {
     display: block;
@@ -221,13 +219,68 @@ footer small {
     margin-left: 15px;
 }
 
+form {
+    padding: 20px 20px;
+    width: 75%;
+    align: center;
+}
+
 @media (max-width: 450px) {
 
     .main-container {
         width: 90%;
     }
 
-    header, footer {
+    .container {
+        padding: 20px 0 0 0;
+        height: fit-content;
+    }
+
+    header {
+        width: 100%;
+    } 
+
+    #banner {
+        width: 100%;
+        height: 250px;
+    }
+    
+    #banner .button-cta {
+        font-size: 14px;
+        margin-left: 150px;
+        margin-bottom: 340px;
+    }
+
+    .button-cta {
+        font-size: 14px;
+    }
+
+    .legenda {
+        margin-bottom: 10px;
+        margin-left: 55px;
+        padding: 7px;
+        height: 12vw;    
+    }
+
+    .legenda h3 {
+        font-size: 14px;
+        line-height: 1.8rem;
+    }
+
+    .legenda h4 {
+        font-size: 10px;
+    }
+
+    .legenda-container {
+        bottom: 0vh;
+        right: 35px;
+    }
+
+    #saiba-mais {
+        padding: 10px 5px;
+    }
+
+    footer {
         width: 90%;
     }
 
@@ -249,9 +302,10 @@ footer small {
         overflow: hidden !important;
         padding: 20px !important;
         border: solid 1px coral !important;
+        width: 100%;
     }
     
-    }
+}
 
 
 @media (min-width: 450px) (max-width: 1024px) {
@@ -264,6 +318,11 @@ footer small {
         width: 90%;
     }
 
+    div .legenda {
+        padding: 10px;
+        height: 10vw;
+    }
+
     .cog-cognito {
         height: 760px !important;
         overflow: hidden !important;
@@ -272,23 +331,17 @@ footer small {
      }  
 }
 
-
 #saiba-mais {
     background-color: rgb(240, 245, 247);
-    padding: 40px 20px;
+    padding: 40px 0px 40px 20px;
+    max-width: 100%;
+    float: left;
+    display: block;
 }
 
-#saiba-mais p,
-#saiba-mais img {
-    width: 45%;
-    display: block;
-    float: left;
-    padding: 20px;
-}
 
 dl {
     padding: 20px;
-    margin: 25px 0;
 }
 
 dt {
